@@ -1,0 +1,110 @@
+<body>
+<!-- HEADER -->
+<div class="topRow">
+  <div class="registration-form-header regis">
+    <div mat-dialog-title >
+      {{ 'PREVIEW.REG.HEADER' | translate }}
+    </div>
+  </div>
+  <button class="buttonClose" mat-button mat-dialog-close></button>
+  <div class="greyLine"></div>
+</div>
+
+
+<form [formGroup]="registrationForm" (keydown)="submitOnEnter($event)">
+
+  <div class="divContent">
+
+    <div class="textRow">
+      <h2 [innerHTML]="'PREVIEW.REG.INSTRUCTION' | translate"></h2>
+      <p class="tabletH" [innerHTML]="'PREVIEW.REG.INSTRUCTION_T' | translate"></p>
+      <p class="mobileH" [innerHTML]="'PREVIEW.REG.INSTRUCTION_M' | translate"></p>
+    </div>
+
+
+    <div mat-dialog-content>
+
+      <!--               EMAIL INPUT              -->
+      <div class="form-group marginField">
+        <mat-form-field>
+          <input type="email"
+                 class="form-control"
+                 matInput
+                 formControlName="email"
+                 placeholder="{{ 'PREVIEW.REG.PH_EMAIL' | translate }}"
+          >
+          <mat-error *ngIf="email.getError('required')" class="errorMessage">{{ 'PREVIEW.REG.ERR_REQUIRED' | translate }}</mat-error>
+          <mat-error *ngIf="email.getError('emailTaken')" class="errorMessage">{{ 'PREVIEW.REG.ERR_EMAIL_TAKEN' | translate }}</mat-error>
+          <mat-error *ngIf="email.invalid && email.value.length > 0" class="errorMessage">{{ 'PREVIEW.REG.ERR_EMAIL_INVALID' | translate }}</mat-error>
+        </mat-form-field>
+      </div>
+
+      <img *ngIf="email.valid" src="../../../../assets/images/checked.png" class="images">
+      <img *ngIf="email.invalid && (email.dirty || email.touched)" src="../../../../assets/images/Error.png" class="images">
+
+      <div class="spaceDiv1"></div>
+
+      <!--               PASSWORD INPUT              -->
+
+      <div class="form-group marginField">
+        <mat-form-field>
+          <input  type="password"
+                  class="form-control"
+                  matInput
+                  placeholder="{{ 'PREVIEW.REG.PH_PASS' | translate }}"
+                  formControlName="password"
+          >
+          <mat-error *ngIf="password.getError('required')" class="errorMessage">{{ 'PREVIEW.REG.ERR_REQUIRED' | translate }}</mat-error>
+        </mat-form-field>
+
+        <div class="spaceDiv"></div>
+        <h3 [ngClass]="{'wrongPass': password.getError('pattern') && password.value.length > 0}" [innerHTML]="'PREVIEW.REG.ERR_PASS_INVALID' | translate"></h3>
+
+
+      </div>
+
+      <img *ngIf="password.valid" src="../../../../assets/images/checked.png" class="images">
+
+      <img *ngIf="password.invalid && (password.dirty || password.touched)" src="../../../../assets/images/Error.png" class="images">
+
+      <div class="spaceDiv2"></div>
+
+      <!--               CONFIRMATION PASSWORD INPUT              -->
+
+      <div class="form-group marginField">
+        <mat-form-field>
+          <input type="password"
+                 class="form-control"
+                 matInput
+                 placeholder="{{ 'PREVIEW.REG.PH_PASS_CONFIRM' | translate }}"
+                 formControlName="confirmPassword"
+          >
+          <mat-error *ngIf="confirmPassword.getError('required')" class="errorMessage">{{ 'PREVIEW.REG.ERR_REQUIRED' | translate }}</mat-error>
+          <mat-error *ngIf="confirmPassword.getError('matchOther') && confirmPassword.value.length > 0" class="errorMessageBig">{{ 'PREVIEW.REG.ERR_PASS_NO_MATCH' | translate }}</mat-error>      </mat-form-field>
+
+
+      </div>
+
+      <img *ngIf="confirmPassword.valid" src="../../../../assets/images/checked.png" class="images">
+      <img *ngIf="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)" src="../../../../assets/images/Error.png" class="images">
+
+    </div>
+
+    <!--                 SUBMIT BUTTON            -->
+    <div class="textRow">
+      <mat-dialog-actions>
+        <button type="submit" class="submitBtn"
+                [disabled]="registrationForm.invalid"
+                mat-button
+                mat-dialog-close
+                (click)="registerUser()">
+          <p class="p4">{{ 'PREVIEW.REG.COMPLETE_REG' | translate }}</p>
+        </button>
+      </mat-dialog-actions>
+
+    </div>
+  </div>
+
+</form>
+
+</body>

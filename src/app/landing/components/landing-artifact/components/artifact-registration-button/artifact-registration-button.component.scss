@@ -1,0 +1,53 @@
+.artifRegBut{
+  font-weight: lighter;
+  color: black;
+  background: transparent;
+  border: 2px solid black;
+  width: 93%;
+  height: 3.5vw;
+  border-radius: 0.5vw;
+  font-size: 250%;
+  margin-bottom: 10%;
+
+}
+.artifRegBut:hover{
+  background-color: #8bc33e;
+  color: white;
+  border:0;
+}
+.artifRegBut:active{
+  background: transparent;
+  color: black;
+  border:0;
+}
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .artifRegBut {
+    width: 100%;
+    height: 4.2vw;
+    border-radius: 1vw;
+    font-size: 150%;
+    margin-top: 23%;
+    margin-bottom: 36%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .artifRegBut {
+    width: 90%;
+    height: 7.5vw;
+    border-radius: 1vw;
+    font-size: 250%;
+    margin-top: 3%;
+    margin-bottom: 7%;
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .artifRegBut {
+    width: 102%;
+    height: 9vw;
+    border-radius: 1vw;
+    font-size: 160%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+}

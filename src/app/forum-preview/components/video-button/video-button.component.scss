@@ -1,0 +1,131 @@
+.mainBtn {
+  background-color: rgb(236, 40, 40);
+  color: white;
+  border-radius: 3%;
+  width: 84%;
+  height: 3.35vw;
+  line-height: 1vw;
+}
+.mat-button-wrapper {
+  height: 100% !important;
+}
+
+.video-button-text-row {
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+  border-radius: 0 !important;
+}
+.text {
+  width: 29.8%;
+  height: 3.6vw !important;
+  position: relative;
+  padding-left: 15.8% !important;
+  font-size: 1.6vw;
+  font-family: "Helvetica_Neue_light", sans-serif;
+  line-height: 3.3vw;
+}
+
+.left {
+  padding-left: 7.2% !important;
+  width: 29.8%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.youtube-img {
+  width: 6vw;
+  height: auto;
+  padding-bottom: 10%;
+}
+
+.mainBtn:hover{
+  background-color: #ea3d3d;
+}
+
+.mainBtn:active{
+  background-color: #c93232;
+}
+
+//for mobile
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .mainBtn {
+    border-radius: 2vw;
+    width: 41vw;
+    height: 6.7vw;
+    margin-bottom: 2.5vw;
+  }
+  .youtube-img {
+    width: 12vw;
+    position: relative;
+    right: 3vw;
+  }
+  .text {
+    position: relative;
+    right: 1vw;
+    top: 1.8vw;
+    font-size: 3.5vw;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .mainBtn {
+    border-radius: 1vw;
+    width: 194%;
+    height: 8vw;
+    margin-left: -48%;
+  }
+
+  .text{
+    font-size:  4.1vw;
+    margin-top: 2vw;
+    margin-left: 0%;
+  }
+
+  .youtube-img {
+    width: 14vw;
+    margin-left: 18%;
+    margin-top: 3%;
+  }
+
+}
+
+//for tab in landscape
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+
+  .video-btn {
+    height: 100%;
+  }
+
+  .left {
+    padding: 0 !important;
+    width: 29.8%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .mainBtn {
+    border-radius: 0.8vw;
+    width: 92%;
+    height: 100%;
+    //margin-top: 1vw;
+  }
+
+  .text{
+    font-size:  2.4vw;
+    margin-top: 0.6vw;
+    margin-left: -2%;
+  }
+
+  .youtube-img {
+    width: 8.2vw;
+    margin-left: 22%;
+    //margin-top: 3%;
+  }
+
+}
+
+
+

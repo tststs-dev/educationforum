@@ -1,0 +1,234 @@
+.buttonClose2 {
+  background: url(assets/images/Close.png) no-repeat center;
+  background-size: contain;
+  color: rgb(139, 195, 62);
+  width: 1.8vw !important;
+  height: 1.8vw !important;
+  position: relative !important;
+  left: 16.3vw;
+  top: 1vh;
+  line-height: normal !important;
+
+  &:hover {
+    width: 2.5vw;
+    height: 2.5vh;
+  }
+}
+
+.mat-button {
+  &:hover {
+    background-color: transparent;
+  }
+  min-width: 2.4vw !important;
+}
+
+
+@media  screen and (min-width: 1025px) and (max-width: 1280px) {
+  .videoWindow {
+    .mat-dialog-container {
+      width: 71vw !important;
+      height: 51vw !important;
+    }
+  }
+  .topRow2 {
+    width: 71vw !important;
+  }
+  .videoRow {
+    width: 71vw !important;
+    height: 42vw !important;
+    top: 2vw !important;
+  }
+  .greyLine2 {
+    width: 71vw !important;
+    height: 0.4vh !important;
+    top: 4.5vw !important;
+  }
+  .topVideo {
+    .mat-dialog-title {
+      padding-left: 29.5vw !important;
+    }
+  }
+  .buttonClose2 {
+    left: 26.5vw !important;
+    width: 2vw !important;
+    height: 2vw !important;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
+  .videoWindow {
+    .mat-dialog-container {
+      width: 71vw !important;
+      height: 51vw !important;
+    }
+  }
+  .topRow2 {
+    width: 71vw !important;
+  }
+  .videoRow {
+    width: 71.1vw !important;
+    height: 42vw !important;
+    top: 2vw !important;
+  }
+  .greyLine2 {
+    width: 71vw !important;
+    height: 0.4vh !important;
+    top: 5.5vw !important;
+  }
+  .topVideo {
+    .mat-dialog-title {
+      padding-left: 27vw !important;
+    }
+  }
+  .buttonClose2 {
+    left: 22.5vw !important;
+    width: 2.5vw !important;
+    height: 2.5vw !important;
+  }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1024px) and (orientation: landscape) {
+  .topVideo {
+    .mat-dialog-title {
+      font-size: 3vw !important;
+    }
+  }
+  .greyLine2 {
+    top: 4.7vw !important;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 601px) {
+  .topVideo {
+    .mat-dialog-title {
+      padding-left: 31vw !important;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 801px){
+  .buttonClose2 {
+    left: 26vw !important;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 768px) and (orientation: portrait) {
+  .topVideo {
+    .mat-dialog-title {
+      padding-left: 30.5vw !important;
+    }
+  }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 1023px) {
+  .videoWindow {
+    .mat-dialog-container {
+      width: 80vw !important;
+      height: 57vw !important;
+      top: 3.4vh !important;
+      border-radius: 1vh !important;
+    }
+  }
+
+  .buttonClose2 {
+    left: 24.5vw !important;
+    top: 1vw !important;
+    width: 3vw !important;
+    height: 3vw !important;
+  }
+
+  .videoRow {
+    height: 47vw !important;
+    width: 80vw !important;
+    top: 1vw !important;
+  }
+  .topRow2 {
+    width: 80vw !important;
+    height: 10vw !important;
+  }
+  .greyLine2 {
+    top: 7.4vw !important;
+    width: 80vw !important;
+    height: 0.3vh !important;
+  }
+  .topVideo {
+    .mat-dialog-title {
+      padding-top: 2.5vw !important;
+      font-size: 3.5vw !important;
+    }
+  }
+}
+
+@media  screen and (min-width: 320px) and (max-width: 480px) {
+  .videoWindow {
+    .mat-dialog-container {
+      width: 62vw !important;
+      height: 57vw !important;
+    }
+  }
+
+  .videoRow {
+    height: 38vw !important;
+    width: 64vw !important;
+    top: 4.5vw !important;
+  }
+  .topRow2 {
+    width: 62.4vw !important;
+    height: 11vw !important;
+  }
+  .greyLine2 {
+    top: 4.8vw !important;
+    width: 64vw !important;
+    height: 0.6vw !important;
+  }
+
+  .buttonClose2 {
+    left: 6vw !important;
+    top: -1vw !important;
+    width: 3.5vw !important;
+    height: 3.5vw !important;
+  }
+  .topVideo {
+    .mat-dialog-title {
+      padding-left: 20vw !important;
+      font-size: 4vw !important;
+      padding-top: 2vh !important;
+    }
+  }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+  .buttonClose2 {
+    left: 11vw !important;
+    top: 2vw !important;
+  }
+  .greyLine2 {
+    top: 6vw !important;
+  }
+}
+
+@media screen and (min-width: 374px) and (max-width: 375px) {
+  .buttonClose2 {
+    left: 9vw !important;
+  }
+}
+
+@media screen and (min-width: 413px) and (max-width: 414px) {
+  .buttonClose2 {
+    left: 9.1vw !important;
+  }
+  .greyLine2 {
+    top: 5.8vw !important;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 480px) {
+  .buttonClose2 {
+    left: 9.5vw !important;
+
+  }
+  .greyLine2 {
+    top: 6.8vw !important;
+  }
+}

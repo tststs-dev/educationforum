@@ -1,0 +1,178 @@
+.mainContentRow {
+  background: url(../../../../assets/images/main-page/MainBlock_bg.jpg) no-repeat;
+  height: 100%;
+  padding-top: 11%
+  }
+
+  main {
+    height: 100%;
+  }
+
+img {
+  width: 100%;
+}
+
+.h2 {
+    font-family: Philosopher,sans-serif;
+    font-size: 785%;
+    color: white;
+  }
+
+  .h1 {
+    font-family: Philosopher,sans-serif;
+    font-size: 350%;
+    color: #000;
+    width: 100% !important;
+  }
+
+  .lineRow {
+    border-top: 0.1vw solid rgb(255, 255, 255);
+    position: relative;
+    right: 11%;
+    width: 103%;
+  }
+
+  .h1Row {
+    width: 100%;
+  }
+
+  .pRow {
+    padding-bottom: 3%;
+  }
+
+  .p1{
+    font-family: "Helvetica_Neue_light", Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 350%;
+    letter-spacing: 0.1vw;
+  }
+
+  .scrollD {
+    width: 56%;
+    filter: invert(100%);
+    margin-top: 550%;
+    margin-left: 27%;
+  }
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .h2 {
+    font-size: 480%;
+    width: 120%;
+  }
+  .h1 {
+    font-size: 270%;
+  }
+  .h12 {
+    margin-top: -3%;
+  }
+  .lineRow {
+    width: 132%;
+  }
+  .mainContentRow {
+    background: url(../../../../assets/images/main-page/MainBlock_bg1024x768.jpg) no-repeat;
+    padding-top: 14.5%;
+  }
+  .p1 {
+    font-size: 270%
+  }
+  .textArea {
+    margin-left: -3%;
+  }
+  .scrollD {
+    margin-left: 58%;
+    margin-bottom: 222%;
+    position: relative;
+    top: 15vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 899px){
+  .mainContentRow {
+    background: url(../../../../assets/images/main-page/MainBlock_bg768x1024.jpg) no-repeat;
+    padding-top: 14.5%;
+  }
+  img {
+    width: 136%;
+    position: relative;
+    top: 54vw;
+    right: 46%;
+  }
+  .h2 {
+    font-size: 500%;
+    width: 200%;
+    position: relative;
+    bottom: 3vw;
+    padding-top: 11%;
+  }
+  .h1 {
+    width: 200% !important;
+  }
+  .lineRow {
+    border-top: 0.15vw solid white;
+    width: 208%;
+  }
+  .h12 {
+    top: -2vw;
+    position: relative;
+    font-family: Philosopher,sans-serif;
+  }
+  .p1 {
+    font-size: 330%;
+    width: 150%;
+  }
+  .scrollD {
+    width: 100%;
+    margin-top: 710%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .mainContentRow {
+    background: url(../../../../assets/images/main-page/MainBlock_bg480x725.jpg) no-repeat;
+    padding-top: 14.5%;
+  }
+  .h2Row {
+    .h2 {
+      font-size: 384%;
+      width: 200%;
+    }
+  }
+  img {
+    top: 70vw;
+    width: 133%;
+    position: relative;
+    right: 56%;
+  }
+  .lineRow {
+    border-top: 0.35vw solid white;
+    position: relative;
+    right: 19%;
+    width: 213%;
+  }
+  .h1 {
+    font-size: 200%;
+    width: 151% !important;
+  }
+  .h12 {
+    top: -4vw;
+    position: relative;
+    font-family: Philosopher,sans-serif;
+    font-size: 200%;
+  }
+  .textArea {
+    margin-left: 3%;
+  }
+  .p1 {
+    font-size: 200%;
+    strong {
+      position: relative;
+      bottom: 3vw;
+    }
+  }
+  .scrollD {
+    width: 130%;
+    margin-top: 760%;
+  }
+}

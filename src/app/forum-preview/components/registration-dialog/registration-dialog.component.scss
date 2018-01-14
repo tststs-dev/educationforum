@@ -1,0 +1,246 @@
+$primary-color: rgb(139, 195, 62);
+
+/* обнуление отступов */
+
+.col-xs-24, .col-sm-24, .col-md-24, .col-xs-14, .col-sm-14, .col-md-14, .col-xs-5, .col-sm-5, .col-md-5,
+.col-xs-4 .col-sm-4, .col-md-4{
+  padding: 0;
+  margin: 0;
+}
+
+/* Заголовок окна регистрации */
+
+/* Подсказка для пароля */
+h3 {
+  font-family: "Helvetica_Neue_light", sans-serif;
+  font-size: 0.95vw;
+  color: rgb(142, 142, 142);
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: 4.5vw;
+  top: 0.5vw;
+}
+
+.wrongPass {
+  @extend h3;
+  color: rgb(255, 66, 66);
+}
+
+.textRow {
+  text-align: center;
+  margin: 0 auto;
+  height: 12vh;
+  p {
+    margin-bottom: 0.5vw;
+  }
+
+  button {
+    margin-left: 17vw;
+  }
+}
+
+/*стили для кнопки закрытия окна*/
+
+.buttonClose {
+  background: url(../../../../assets/images/Close.png) no-repeat center;
+  background-size: contain;
+  color: $primary-color;
+  width: 1.8vw;
+  height: 1.8vw;
+  position: relative !important;
+  left: 16.3vw;
+  top: 0.5vw;
+  line-height: normal !important;
+
+  &:hover {
+
+  }
+}
+
+.mat-button {
+  &:hover {
+
+  }
+}
+
+/*стили для заголовка окна*/
+.regis {
+  .mat-dialog-title {
+    padding-left: 19vw;
+    float: left !important;
+    margin: 0 !important;
+    text-align: center !important;
+    position: relative !important;
+    font-size: 2vw;
+    font-family: "Helvetica_Neue_light", sans-serif !important;
+    font-weight: bold;
+    box-sizing: border-box !important;
+    padding-top: 2vw;
+    line-height: normal !important;
+  }
+}
+/*стили для шапки*/
+
+.topRow {
+  width: 49vw;
+  height: 6vw;
+  background-color: $primary-color;
+  color: white;
+  letter-spacing: 0.1vw;
+}
+
+.greyLine {
+  background-color: rgb(162, 162, 162);
+  height: 0.2vw;
+  width: 49vw;
+  position: relative;
+  top: 4vw;
+}
+
+/* стили  для полей ввода*/
+
+/* Div для отсупов между полями */
+
+.spaceDiv2 {
+  height: 1vh;
+}
+
+.spaceDiv1 {
+  height: 1vh;
+}
+
+.spaceDiv {
+  height: 1vh;
+}
+
+form {
+  width: 50vw;
+  height: 35vw;
+
+  background-color: rgb(241, 241, 241);
+  h2 {
+    color: rgb(142, 142, 142);
+    font-family: "Helvetica_Neue_light", sans-serif;
+    font-weight: lighter;
+    font-size: 1.4vw;
+    line-height: normal !important;
+    padding-top: 2vw;
+    margin: 0 !important;
+  }
+  .tabletH {
+    color: rgb(142, 142, 142);
+    font-family: "Helvetica_Neue_light", sans-serif;
+    font-weight: lighter;
+    font-size: 1.4vw;
+    line-height: normal !important;
+    padding-top: 2vw;
+    margin: 0 !important;
+    display: none;
+  }
+  .mobileH {
+    color: rgb(142, 142, 142);
+    font-family: "Helvetica_Neue_light", sans-serif;
+    font-weight: lighter;
+    font-size: 1.4vw;
+    line-height: normal !important;
+    padding-top: 2vw;
+    margin: 0 !important;
+    display: none;
+  }
+}
+
+.images {
+  width: 3vw;
+  position: relative;
+  float: right;
+  top: 1vw;
+  right: 9vw;
+}
+
+/*стили для кнопки регистрации*/
+
+.submitBtn {
+  margin: 0 auto;
+  background-color: $primary-color;
+  padding-top: 1vh;
+  width: 15vw;
+  height: 3vw;
+  border-radius: 0.5vw;
+
+  p {
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+    line-height: normal !important;
+  }
+  &:hover {
+    background-color: rgb(150, 210, 68);
+  }
+}
+
+/*стили для полей*/
+
+.marginField  {
+  padding-left: 10vw;
+  float: left;
+}
+
+.mat-form-field {
+  font-style:inherit;
+  width: 25vw;
+  height: 4.6vw;
+  border-radius: 0.5vw;
+  background-color: white;
+  box-sizing: border-box;
+  line-height: normal !important;
+  position: relative;
+  top: 1vh;
+  left: 4vh;
+
+  input {
+    font-family: "Helvetica_Neue_light", sans-serif;
+    font-style: normal;
+    color: black;
+    width: 24.8vw;
+    height: 2.7vw;
+    position: relative;
+    bottom: 0.4vw;
+    right: 0.9vw;
+    line-height: normal !important;
+  }
+}
+
+.form-control {
+  font-size: 1.78vw;
+  line-height: normal !important;
+}
+
+.errorMessage {
+  font-family: "Helvetica_Neue_light", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 1.2vw;
+  color: rgb(255, 66, 66);
+  line-height: normal !important;
+  position: relative;
+  left: 1vh;
+  top: 0.2vw;
+}
+
+input.mat-input-element {
+  margin-top: 0 !important;
+}
+
+.errorMessageBig {
+  @extend .errorMessage;
+  font-size: 1.2vw;
+}
+
+body {
+  font-size: 1vh !important;
+  line-height: normal !important;
+}
+
+
+
+

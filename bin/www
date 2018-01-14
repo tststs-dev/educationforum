@@ -1,0 +1,167 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+const fs = require('fs');
+const config = require('config');
+const http = require('http');
+const https = require('https');
+const debug = require('debug');
+
+const app = require('../app');
+const httpApp = require('./httpApp');
+
+const mailer = require('../helpers/mailer');
+const crypto = require('../helpers/crypto');
+const mongoose = require('../db/mongoose');
+const User = require('../db/models/user');
+
+let options = {
+  ca: fs.readFileSync('./sslcert/ca_bundle.crt'),
+  key: fs.readFileSync('./sslcert/private.key'),
+  cert: fs.readFileSync('./sslcert/certificate.crt')
+};
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+const httpsPort = normalizePort(process.env.PORT || config.httpsPort);
+const httpPort = normalizePort(process.env.PORT || config.httpPort);
+
+app.set('port', httpsPort);
+httpApp.set('port', httpPort);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+function startServer () {
+  return mongoose.connect(config.db.url, {useMongoClient: true})
+    .then(
+      () => {
+        console.log('Successfully connected to database');
+      },
+      err => {
+        console.log(err);
+        process.exit()
+      }
+    )
+    .then(() => mongoose.connection.db.dropDatabase())
+    .then(() => User.create({
+        email: "mir.zayavki@gmail.com",
+        passwordHash: crypto.encrypt("")
+      })
+        .catch(err => console.log(err))
+    )
+    .then(() => {
+      return new Promise((resolve, reject) => {
+        mailer.transporter.verify(function(error) {
+          if (error) {
+            reject(error)
+          } else {
+            console.log('Server is ready to take our messages');
+            resolve()
+          }
+        });
+      })
+    })
+    .then(() => {
+      if (config.httpsPort) {
+        const httpServer = http.createServer(httpApp);
+        httpServer.listen(httpPort);
+        console.log('USUAL listening on port ' + httpPort);
+        httpServer.on('error', onError);
+        httpServer.on('listening', onListening);
+        return true;
+      }
+      else {
+        const httpServer = http.createServer(app);
+        httpServer.listen(httpPort);
+        console.log('USUAL listening on port ' + httpPort);
+        httpServer.on('error', onError);
+        httpServer.on('listening', onListening);
+        return true;
+      }
+
+    })
+    .then(() => {
+      if (config.httpsPort) {
+        const httpsServer = https.createServer(options, app);
+        httpsServer.listen(httpsPort);
+        console.log('SECURE listening on port ' + httpsPort);
+        httpsServer.on('error', onError);
+        httpsServer.on('listening', onListening);
+        return true;
+      }
+      else return true
+    })
+    .catch(err => {
+      console.log(err);
+      process.exit();
+    });
+}
+
+startServer();
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  let port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  let bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  let addr = this.address();
+  let bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}
+
+module.exports.startServer = startServer;

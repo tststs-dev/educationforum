@@ -1,0 +1,42 @@
+{
+  "PREVIEW" : {
+    "TRANSLATE"        : "Choose language",
+    "TEXT1"             : "<strong>International Educational</strong>",
+    "TEXT2"             : "<strong>Forum</strong> 2018",
+    "TEXT3"             : "Kharkiv",
+    "TEXT1_M"           : "<strong>International</strong>",
+    "TEXT2_M"           : "<strong>Educational Forum</strong>",
+    "YEAR_M"            : "2018",
+    "DATE"              : "March 28-30",
+    "TIMER_TEXT"        : "Time to start the forum:",
+    "TIMER_DAYS"        : "Days",
+    "TIMER_HOURS"       : "Hours",
+    "TIMER_MINUTES"     : "Minutes",
+    "REG_BUTTON"        : "Registration",
+    "VIDEO_BUTTON"      : "Forum 2017",
+    "REG" : {
+      "HEADER"            : "Registration",
+      "INSTRUCTION"       : "To create a member of the forum <br>fill in the fields below",
+      "INSTRUCTION_T"     : "To create a member of the forum <br>fill in the fields below",
+      "INSTRUCTION_M"     : "To create a member of the forum <br>fill in the fields below",
+      "ERR_REQUIRED"      : "Required field",
+      "ERR_EMAIL_TAKEN"   : "E-mail is already exist! Try another one.",
+      "ERR_EMAIL_INVALID" : "E-mail is not valid",
+      "ERR_PASS_INVALID"  : "The password should consist of 8-16 characters and <br>only in Latin letters and numbers.",
+      "ERR_PASS_NO_MATCH" : "The entered passwords do not match!",
+      "PH_EMAIL"          : "Enter E-mail",
+      "PH_PASS"           : "Enter the password",
+      "PH_PASS_CONFIRM"   : "Repeat your password",
+      "COMPLETE_REG"      : "Register now"
+    },
+    "VIDEO" : {
+      "HEADER" : "Forum 2017"
+    },
+    "REG_SUCCESS" : {
+      "TEXT1"   : "You have successfully registered!",
+      "TEXT2"   : "Please check your",
+      "TEXT3"   : "E-Mail"
+    }
+  }
+}
+

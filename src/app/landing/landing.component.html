@@ -1,0 +1,41 @@
+<!--     DESKTOP  |    HIDE IF MOBILE    -->
+<div class="landing-desktop">
+   <!--Навигационный хедер лендинга-->
+  <app-landing-header id="header"></app-landing-header>
+
+  <!-- Блок главного экрана лендинга -->
+  <app-landing-main id="main"></app-landing-main>
+  <app-landing-artifact></app-landing-artifact>
+  <!-- Остальные блоки -->
+</div>
+
+
+<!-- MOBILE / TABLET   |   HIDE IF DESKTOP  -->
+<div class="landing-mobile">
+  <!-- Кнопка открывающая меню -->
+  <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="over"  [fixedInViewport]=true position="end">
+      <button (click)="sidenav.close()" class="closeB"><img src="../../assets/images/Close.png" class="closeM" alt=""> </button>
+      <mat-nav-list>
+        <a mat-list-item href="banner#" scrollTo="main_m" (click)="sidenav.close()">Головний екран</a>
+        <a mat-list-item href="banner#" scrollTo="features_m" (click)="sidenav.close()">Особливості</a>
+        <a mat-list-item href="banner#" scrollTo="program_m" (click)="sidenav.close()">Програма</a>
+        <a mat-list-item href="banner#" scrollTo="speakers_m" (click)="sidenav.close()">Спікери</a>
+        <a mat-list-item href="banner#" scrollTo="how-registration_m" (click)="sidenav.close()">Як зареєструватись</a>
+        <a mat-list-item href="banner#" scrollTo="contacts_m" (click)="sidenav.close()">Контакти</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <!-- Блоки лендинга -->
+    <mat-sidenav-content>
+
+      <!-- Блок главного экрана лендинга -->
+      <app-landing-main id="main_m"></app-landing-main>
+      <app-landing-artifact></app-landing-artifact>
+      <!-- Остальные блоки -->
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

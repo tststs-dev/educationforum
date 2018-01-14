@@ -1,0 +1,180 @@
+@media all and (max-width: 1281px) and (min-width: 1280px) {
+  .buttonClose3 {
+    bottom: 2.5vw !important;
+  }
+  .greyLine3 {
+    top: 1vw !important;
+  }
+  .desktopP {
+    left: 8vw !important;
+    top: 2vw !important;
+  }
+}
+
+@media screen and (min-width: 768.1px) and (max-width: 1024px) {
+  .regSuccDialogWindow {
+    .mat-dialog-container {
+      width: 80vw !important;
+      height: 30vw !important;
+    }
+  }
+  .topRow3 {
+    width: 80vw !important;
+    height: 12vw !important;
+  }
+  .greyLine3 {
+    width: 80vw !important;
+    top: 2.5vw !important;
+  }
+  .buttonClose3 {
+    left: 75vw !important;
+    bottom: 3.5vw !important;
+    width: 4vw !important;
+    height: 4vw !important;
+  }
+  .desktopP {
+    font-size: 2.5vw !important;
+    top: 2.5vw !important;
+    left: 7vw !important;
+  }
+  .emaill {
+    h2 {
+      font-size: 3.5vw !important;
+      top: -8vw !important;
+      left: 24vw !important;
+    }
+  }
+  .bottomRow {
+    height: 18vw !important;
+    width: 80vw !important;
+    img {
+      width: 15vw !important;
+      height: 15vw !important;
+      left: 6vw !important;
+      top: 2vw !important;
+    }
+  }
+  .desktopP {
+    font-size: 4vw !important;
+    top: 3vw !important;
+    left: 11vw !important;
+  }
+}
+
+@media screen and (min-width: 480.1px) and (max-width: 768px) {
+  .regSuccDialogWindow {
+    .mat-dialog-container {
+      width: 80vw !important;
+      height: 30vw !important;
+    }
+  }
+  .topRow3 {
+    width: 80vw !important;
+  }
+  .desktopP {
+    font-size: 4vw !important;
+    top: 3vw !important;
+    left: 12vw !important;
+  }
+  .greyLine3 {
+    width: 80vw !important;
+    top: 3vw !important;
+  }
+  .bottomRow {
+    width: 80vw !important;
+    height: 18vw !important;
+    img {
+      width: 18vw !important;
+      height: 18vw !important;
+      left: 5vw !important;
+    }
+  }
+  .emaill {
+    h2 {
+      font-size: 3.5vw !important;
+      top: -12vw !important;
+      left: 25vw !important;
+    }
+  }
+  .topRow3 {
+    height: 12vw !important;
+  }
+  .buttonClose3 {
+    width: 3.5vw !important;
+    height: 3.5vw !important;
+    left: 73vw !important;
+    bottom: 3vw !important;
+  }
+}
+
+@media screen and (min-width: 600.1px) and (max-width: 768px) {
+  .buttonClose3 {
+    left: 74.5vw !important;
+    bottom: 3.5vw !important;
+  }
+}
+
+@media screen and (min-width: 319px) and (max-width: 480px) {
+  .regSuccDialogWindow {
+    .mat-dialog-container {
+      width: 70vw !important;
+      height: 30vw !important;
+    }
+  }
+  h3 {
+    font-size: 4vw !important;
+    top: 0.5vw !important;
+    left: 19vw !important;
+  }
+  .topRow3 {
+    width: 70vw !important;
+    height: 12vw !important;
+  }
+  .greyLine3 {
+    top: -2.7vw !important;
+    width: 70vw !important;
+  }
+  .bottomRow {
+    height: 18vw !important;
+    width: 70vw !important;
+  }
+  .buttonClose3 {
+    left: 61.5vw !important;
+    bottom: 8.5vw !important;
+    width: 4vw !important;
+    height: 4vw !important;
+  }
+  .bottomRow {
+    img {
+      width: 11vw !important;
+      height: 12vw !important;
+      position: relative !important;
+      left: 10vw !important;
+      top: 3vw !important;
+    }
+  }
+  .emaill {
+    width: 39vw;
+    h2 {
+      left: 23vw !important;
+      top: -6vw !important;
+      font-size: 3vw !important;
+    }
+  }
+  .desktopP {
+    display: none;
+  }
+  .mobileP {
+    display: initial !important;
+  }
+}
+
+@media screen and (min-width: 319px) and (max-width: 330px) {
+  .greyLine3 {
+    top: -3.6vw !important;
+  }
+}
+
+
+
+

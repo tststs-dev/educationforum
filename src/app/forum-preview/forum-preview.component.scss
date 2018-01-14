@@ -1,0 +1,789 @@
+.content {
+  background: url(../../assets/images/Main-Bg_Banner.jpg) no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.logo1 {
+  height: 100%;
+  width: 100%;
+  max-width: 200px;
+  margin-left: 8.5%;
+}
+
+.logo-text-row {
+  padding-top: 0.75%;
+  height: 39%;
+  min-height: 249.2px;
+}
+
+.text-border {
+  border-left: 1px solid #000;
+  margin-left: 50%;
+  margin-top: 23%;
+  height: 75%;
+  max-height: 270px;
+}
+
+.text {
+  padding-top: 8.3%;
+
+  .p1{
+    font-family: "Philosopher_regular", sans-serif;
+    font-size: 254%;
+    margin: 0 0 0 0;
+    line-height: 107%;
+  }
+  .p2{
+    font-family: "Helvetica_Neue_light", sans-serif;
+    margin: 0 0 0 0;
+    line-height: 155%;
+    font-size: 209%;
+  }
+  .date {
+    font-family: "Helvetica_Neue_light", sans-serif;
+    font-weight: bold;
+    margin: 0 0 0 0;
+    font-size: 228%;
+    line-height: 116%;
+  }
+}
+
+
+.language {
+  //display: none;
+}
+
+.language {
+  height: 23%;
+  display: initial;
+}
+
+@media screen and (min-width: 1640px){
+  .text {
+    padding-top: 8.3%;
+    .p1{
+      font-family: "Philosopher_regular", sans-serif;
+      font-size: 50px;
+      margin: 0 0 0 0;
+      line-height: 107%;
+    }
+    .p2{
+      font-family: "Helvetica_Neue_light", sans-serif;
+      margin: 0 0 0 0;
+      line-height: 155%;
+      font-size: 48px;
+    }
+    .date {
+      font-family: "Helvetica_Neue_light", sans-serif;
+      font-weight: bold;
+      margin: 0 0 0 0;
+      font-size: 340%;
+      line-height: 48px;
+    }
+  }
+
+  .logo1 {
+    height: 100%;
+    width: 100%;
+    max-width: 275px;
+    margin-left: 8.5%;
+  }
+
+}
+
+.reg-buttons-row {
+  width: 100%;
+  height: 9.5%;
+  text-align: center;
+  min-height: 60.7px;
+}
+
+.timer {
+  min-width: 400px;
+}
+
+.youtube-buttons-row {
+  width: 100%;
+  height: 9.5%;
+  position: relative;
+  text-align: center;
+  min-height: 60.7px;
+}
+
+.timer-text-row {
+  height: 5%;
+  width: 100%;
+  min-height: 31.94px;
+}
+
+.upper-timer-text {
+  font-family: "Helvetica_Neue_light", sans-serif;
+  font-size: 1.9vw;
+  color: #777979;
+  text-align: center;
+  padding-left: 1%;
+}
+
+.lower-timer-text{
+  font-family: "Helvetica_Neue_light", sans-serif;
+  font-size: 2.3vw;
+  color: #777979;
+  height: 3%;
+  min-height: 19.16px;
+}
+
+.text-days{
+  padding-left: 36%;
+  font-size: 1.1vw;
+}
+.text-hours{
+  padding-left: 54%;
+  font-size: 1.1vw;
+}
+.text-minutes{
+  padding-left: 29%;
+  font-size: 1.1vw;
+}
+
+
+.timer-row {
+  height: 13%;
+  width: 100%;
+  min-height: 83.06px;
+}
+
+//Логотипы спонсоров
+
+.ranok-img {
+  width: 100%;
+  height: auto;
+  margin-top: 25%;
+}
+.borya-img{
+  width: 55%;
+  height: auto;
+  margin-top: 7%;
+  margin-left: 24%;
+  }
+.mir-img {
+  width: 70%;
+  height: auto;
+  margin-top: 4%;
+  margin-left: 15%;
+}
+.hoda-img {
+  width: 65%;
+  height: auto;
+  margin-top: 0.4%;
+  margin-left: 17%;
+}
+.assa-img{
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+.gci-img{
+  width: 90%;
+  height: auto;
+  margin-top: 9%;
+  margin-left:5%;
+  }
+.apr-img{
+  width: 70%;
+  height: auto;
+  margin-top: 7%;
+  margin-left: 15%;
+  }
+
+.logo-row {
+  background-color: #e5e5e5;
+  height: 13.5%;
+  border-top: 2px solid rgb(144, 144, 144);
+  width: 100%;
+  min-height: 79.23px;
+}
+
+.pMobile {
+  font-family: "Philosopher", sans-serif;
+  font-size: 3.1vw;
+  margin: 0 0 0 0;
+  line-height: 107%;
+  display: none;
+}
+.pMobileYear {
+  font-family: "Philosopher", sans-serif;
+  font-size: 3.1vw;
+  margin: 0 0 0 0;
+  line-height: 107%;
+  display: none;
+}
+
+.langH {
+  font-family: "Helvetica_Neue_light", sans-serif;
+  text-align: center;
+  font-size: 140%;
+  padding: 2% 0 1% 0;
+}
+
+.UK {
+  width: 100%;
+  margin-right: 5%;
+}
+.GB {
+  width: 100%;
+  margin-left: 5%;
+}
+
+p {
+  margin: 0;
+}
+
+.border-row {
+  height: 100%;
+}
+
+.laguageH {
+  min-height: 40.22px;
+}
+
+.langB {
+  min-height: 25.61px;
+}
+
+
+
+
+//Мобилки
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .text {
+    width: 100%;
+    padding-top: 30%;
+    margin-left: -2%;
+  }
+  .date {
+    font-size: 3.2vw;
+  }
+  .logo1 {
+    padding-top: 59%;
+    margin-left: -24.5%;
+  }
+  .pMobile {
+    font-family: "Philosopher_regular", sans-serif;
+    display: initial;
+    font-size: 4.1vw;
+  }
+  .p1 {
+    display: none;
+  }
+  .pMobileYear {
+    font-family: "Helvetica_Neue_light", sans-serif;
+    display: initial;
+    font-size: 4.1vw;
+  }
+  .p2, .date {
+    font-family: "Helvetica_Neue_light", sans-serif;
+    font-size: 102% !important;
+  }
+  .text-border {
+    border-left: 1px solid #000;
+    height: 29vw;
+    margin-top: 8vw;
+    margin-left: -1vw;
+  }
+  .reg-buttons-row {
+    padding-top: 3%;
+  }
+  .youtube-buttons-row {
+    padding-right: 13vw;
+  }
+  .upper-timer-text {
+    font-size: 3.2vw;
+    padding-left: 25vw;
+    padding-top: 6vw;
+  }
+  .text-days, .text-hours, .text-minutes {
+    font-size: 2.2vw;
+  }
+  .text-days {
+    padding-left: 9%;
+  }
+  .text-hours {
+    padding-left: 66%;
+  }
+  .text-minutes {
+    padding-left: 113%;
+  }
+  .logo-row {
+    height: 17.3%;
+    border-top: 2px solid rgb(144, 144, 144);
+  }
+  .hoda-img {
+    margin-top: 4%;
+    width: 70%;
+  }
+  .mir-img {
+    width: 270%;
+    margin-left: 170%;
+  }
+  .apr-img{
+    width: 73%;
+    margin-top: 82%;
+    margin-left: 10%;
+  }
+  .gci-img {
+    width: 360%;
+    margin-top: 10%;
+    margin-left: 185%;
+  }
+  .borya-img {
+    width: 60%;
+    margin-top: 82%;
+    margin-left: 41%;
+  }
+  .ranok-img {
+    width: 350%;
+    margin-top: 57%;
+    margin-left: 185%;
+  }
+  .assa-img {
+    width: 100%;
+    margin-top: 90%;
+    margin-left: 10%;
+  }
+  .logo-text-row {
+    height: 23%;
+  }
+  .UK {
+    width: 12vw;
+    margin-right: 5%;
+  }
+  .GB {
+    width: 12vw;
+    margin-left: 5%;
+  }
+
+  .langH {
+    font-family: "Helvetica_Neue_light", sans-serif;
+    text-align: center;
+    font-size: 70%;
+    padding: 5% 0 5% 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .logo-text-row {
+    padding-top: 5%;
+  }
+
+  .reg-buttons-row {
+    padding-top: 19%;
+  }
+
+  //Минимальные высоты для row элементов
+
+  .laguageH {
+    min-height: 23.7px;
+  }
+
+  .langB {
+    min-height: 23.9px;
+  }
+
+  .logo-text-row {
+    min-height: 112.67px;
+  }
+
+  .reg-buttons-row {
+    min-height: 66.39px;
+  }
+
+  .youtube-buttons-row {
+    min-height: 46.59px;
+  }
+
+  .timer-text-row {
+    min-height: 34.91px;
+  }
+
+  .timer-row {
+    min-height: 125.3px;
+  }
+
+  .logo-row {
+    min-height: 109.33px;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .logo-row {
+    height: 22%;
+    padding-top: 0;
+  }
+  .reg-buttons-row {
+    padding-top: 20%;
+  }
+  .timer-row {
+    height: 17%;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 361px) {
+  .timer-row {
+    height: 23%;
+  }
+}
+
+// iPhone X
+@media screen and (min-width: 375px) and (max-width: 376px) {
+  .reg-buttons-row {
+    padding-top: 22%;
+  }
+  .timer-row {
+    height: 21%;
+  }
+  .logo-row {
+    img {
+      padding-top: 18%;
+    }
+  }
+}
+
+//Планшики в портрете и телефоны лендскейп
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .laguageH {
+    padding-top: 2%;
+    height: 6%;
+  }
+  .langH {
+    font-family: "Helvetica_Neue_light", sans-serif;
+    text-align: center;
+    font-size: 180%;
+  }
+  .UK {
+    width: 10vw;
+    margin-right: 5%;
+  }
+  .GB {
+    width: 10vw;
+    margin-left: 5%;
+  }
+
+  //Logo border and text
+  .logo-text-row{
+    padding-top: 2%;
+    height: 28%;
+  }
+  .logo1{
+    width: 85%;
+  }
+  .text-border {
+    height: 74%;
+  }
+  .border-row {
+    height: 100%;
+  }
+  .text{
+    width: 100%;
+    padding-top: 7.3%;
+    .p1{
+      font-size: 4.2vw;
+      line-height: 107%;
+    }
+    .p2{
+      font-size: 5vw;
+      line-height: 107%;
+    }
+    .date{
+      font-size: 4.9vw;
+      line-height: 125%;
+    }
+  }
+
+  //Reg row
+  .reg-btn {
+    height: 80%;
+  }
+
+  //Youtube
+  .youtube-buttons-row {
+    height: 8%;
+  }
+
+  //Timer text
+  .upper-timer-text {
+    font-size: 225%;
+  }
+  .timer-text-row{
+    height: 5%;
+  }
+  .lower-timer-text{
+    .text-days{
+      margin-left: -199%;
+      font-size: 3vw;
+    }
+    .text-hours{
+      margin-left: 0%;
+      font-size: 3vw;
+    }
+    .text-minutes{
+      margin-left: 107%;
+      font-size: 3vw;
+    }
+  }
+  .timer-row{
+    height: 14%;
+  }
+
+  //Logos row
+  .logo-row {
+    height: 22%;
+    padding-top: 3%;
+  }
+  .hoda-img {
+    margin-top: 4%;
+    width: 110%;
+    margin-left: 0;
+  }
+  .mir-img {
+    width: 370%;
+    margin-left: 180%;
+    margin-top: 0;
+  }
+  .apr-img{
+    width: 90%;
+    margin-top: 0;
+    margin-left: 320%;
+  }
+  .gci-img {
+    width: 410%;
+    margin-top: 20%;
+    margin-left: 185%;
+  }
+  .borya-img {
+    width: 85%;
+    margin-top: 100%;
+    margin-left: 30%;
+  }
+  .ranok-img {
+    width: 420%;
+    margin-top: 490%;
+    margin-left: -908%;
+  }
+  .assa-img {
+    width: 110%;
+    margin-top: 130%;
+    margin-left: 10%;
+  }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 601px) {
+  .upper-timer-text {
+    font-size: 200%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+  .laguageH {
+    height: 9vw !important;
+  }
+
+  .langB {
+    height: 9vw !important;
+  }
+
+  .logo-text-row {
+    height: 39vw !important;
+  }
+
+  .reg-buttons-row {
+    height: 13vw !important;
+  }
+
+  .youtube-buttons-row {
+    height: 13vw !important;
+  }
+
+  .logo-row {
+    margin-top: 4vw !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 591px) and (orientation: landscape) {
+  .langH {
+    font-size: 145% !important;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 569px) and (orientation: landscape) {
+  .langH {
+    font-size: 125% !important;
+  }
+}
+
+//Лендскейп планшеты
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+
+  //Flag text
+  .laguageH {
+    padding-top: 2vw !important;
+    height: 4.5vw;
+  }
+
+  .langH {
+    font-family: "Helvetica_Neue_light", sans-serif;
+    text-align: center;
+    font-size: 140%;
+  }
+
+  .langB {
+    height: 4vw;
+    margin-top: 1% !important;
+  }
+
+  p {
+    margin: 0 !important;
+  }
+  //Flags
+  .ua-row, .uk-row {
+    height: 100%;
+  }
+  .UK {
+    height: 100%;
+  }
+  .GB {
+    height: 100%;
+  }
+
+  //Logo border and text
+
+  .logo-text-row {
+    height: 22vw;
+  }
+
+  .border-row {
+    height: 100%;
+  }
+
+  .logo1{
+    width: 100%;
+    max-height: 200px;
+    max-width: 200px;
+  }
+
+  .text-border {
+    height: 85%;
+    margin-top: 12%;
+  }
+
+  .text{
+    padding-top: 6%;
+
+    .p1{
+      font-size: 250%;
+    }
+    .p2{
+      font-size: 225%;
+    }
+    .date{
+      font-size: 225%;
+    }
+  }
+
+
+  //Reg button
+
+  .reg-buttons-row {
+    height: 4vw;
+  }
+
+  .reg-btn {
+    height: 100%;
+  }
+
+  //Youtube button
+  .youtube-buttons-row {
+    height: 4.5vw;
+    margin-top: 1% !important;
+  }
+
+  .utube-btn {
+    height: 100%;
+  }
+
+  //Timer text
+
+  .timer-text-row {
+    height: 6%;
+    margin-top: 1% !important;
+  }
+
+  .upper-timer-text {
+    width: 100%;
+    font-size: 2.8vw;
+  }
+
+  .day-text-row, .hour-text-row, .min-text-row {
+    height: 100%;
+  }
+  .lower-timer-text{
+    padding-top: 0.3%;
+    height: 3%;
+
+    .text-days{
+      padding-left: 10%;
+      font-size: 80%;
+      margin-top: -3%;
+    }
+    .text-hours{
+      padding-left: 55%;
+      font-size: 80%;
+      margin-top: -3%;
+    }
+    .text-minutes{
+      padding-left: 45%;
+      font-size: 80%;
+      margin-top: -3%;
+    }
+  }
+
+  //Timer row
+  .timer-row {
+    height: 10vw;
+  }
+
+  //Logos row
+  .logo-row {
+    height: 10vw;
+  }
+
+  .hoda-img {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 5%;
+  }
+ .assa-img{
+   margin-left: 8%;
+ }
+
+  .reg-buttons-row {
+    min-height: 0;
+  }
+
+  .youtube-buttons-row {
+    min-height: 0;
+  }
+}
+
+
+
+

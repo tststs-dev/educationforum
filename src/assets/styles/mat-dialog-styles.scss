@@ -1,0 +1,13 @@
+.mat-dialog-container {
+  padding: 0 !important;
+  border-radius: 1vh !important;
+  overflow: hidden !important;
+  line-height: normal !important;
+}
+
+.mat-button {
+  &:hover {
+    background-color: transparent;
+  }
+  min-width: 2.4vw !important;
+}

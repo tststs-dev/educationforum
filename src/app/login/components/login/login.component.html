@@ -1,0 +1,24 @@
+<form [formGroup]="loginForm" (keydown)="submitOnEnter($event)">
+  <div>
+    <input  type="email"
+            formControlName="email"
+            placeholder="email"
+    >
+  </div>
+
+  <div>
+    <input  type="password"
+            formControlName="password"
+            placeholder="password"
+    >
+  </div>
+
+  <button type="submit"
+          [disabled]="loginForm.invalid"
+          mat-button
+  >
+    login
+  </button>
+
+
+</form>

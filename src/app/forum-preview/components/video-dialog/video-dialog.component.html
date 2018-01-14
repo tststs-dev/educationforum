@@ -1,0 +1,29 @@
+<!-- HEADER -->
+<div class="topRow2">
+
+  <div class="registration-form-header topVideo">
+    <div mat-dialog-title>
+      {{ 'PREVIEW.VIDEO.HEADER' | translate }}
+    </div>
+  </div>
+
+  <button class="buttonClose2" mat-button mat-dialog-close></button>
+
+  <div class="greyLine2"></div>
+  <div class="whileLine"></div>
+</div>
+<div class="videoRow" >
+  <iframe *ngIf="getLanguage() == 'ua'"
+          width="100%" height="95%"
+          src="https://www.youtube.com/embed/7s5Wfm4zOlE"
+          frameborder="0"
+          allowfullscreen>
+  </iframe>
+
+  <iframe *ngIf="getLanguage() == 'en'"
+          width="100%" height="95%"
+          src="https://www.youtube.com/embed/qViC_okXoiE"
+          frameborder="0"
+          allowfullscreen>
+  </iframe>
+</div>

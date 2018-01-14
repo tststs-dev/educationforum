@@ -1,0 +1,137 @@
+<div class="content" *ngIf="loaded">
+
+
+  <div class="row laguageH">
+    <div class="col-xs-8 col-sm-8 col-md-9 col-lg-8"></div>
+    <div class="col-xs-8 col-sm-8 col-md-6 col-lg-8">
+      <p class="langH">{{ 'PREVIEW.TRANSLATE' | translate }}</p>
+    </div>
+    <div class="col-xs-8 col-sm-8 col-md-9 col-lg-8"></div>
+  </div>
+
+  <div class="row langB">
+    <div class="col-xs-9 col-sm-9 col-md-10 col-lg-11"></div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 ua-row">
+      <a href="#">
+        <img src="../../assets/images/UK.png" alt="" class="UK" (click)="switchLanguage('ua')">
+      </a>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-1 uk-row">
+      <a href="#">
+        <img src="../../assets/images/GB.png" alt="" class="GB" (click)="switchLanguage('en')">
+      </a>
+    </div>
+    <div class="col-xs-9 col-sm-9 col-md-10 col-lg-11"></div>
+  </div>
+
+
+  <!--Logo border and text-->
+  <div class="row logo-text-row">
+    <div class="col-xs-6 hidden-sm col-md-3 col-lg-6" ></div>
+    <div class="col-xs-5 col-sm-8 col-md-6 col-lg-5" >
+      <img class="logo1" src="../../assets/images/Flogo.png">
+    </div>
+    <div class="col-xs-1 col-sm-3 col-md-3 col-lg-2 border-row" >
+      <div class="text-border"><br><br></div>
+    </div>
+    <div class="col-xs-8 col-sm-13 col-md-10 col-lg-9" >
+      <div class="text">
+        <h1 class="p1" [innerHTML]="'PREVIEW.TEXT1' | translate"></h1>
+        <h1 class="p1" [innerHTML]="'PREVIEW.TEXT2' | translate"></h1>
+
+        <div class="pMobile" [innerHTML]="'PREVIEW.TEXT1_M' | translate"></div>
+        <div class="pMobile" [innerHTML]="'PREVIEW.TEXT2_M' | translate"></div>
+        <div class="pMobileYear"> {{ 'PREVIEW.YEAR_M' | translate }} </div>
+
+        <h1 class="p2">{{ 'PREVIEW.TEXT3' | translate }}</h1>
+        <div class="date">{{ 'PREVIEW.DATE' | translate }}</div>
+      </div>
+    </div>
+    <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2" ></div>
+  </div>
+
+  <!--Reg button-->
+  <div class="row reg-buttons-row">
+    <div class="col-xs-8 col-sm-10 col-md-9 col-lg-10" ></div>
+    <div class="col-xs-8 col-sm-4 col-md-6  col-lg-4 reg-btn" >
+      <app-registration-button></app-registration-button>
+    </div>
+    <div class="col-xs-8 col-sm-10 col-md-9 col-lg-10" ></div>
+  </div>
+
+  <!--Youtube button-->
+  <div class="row youtube-buttons-row">
+    <div class="col-xs-8 col-sm-9 col-md-8 col-lg-9" ></div>
+    <div class="col-xs-8 col-sm-6 col-md-8 col-lg-6 utube-btn" >
+      <app-video-button></app-video-button>
+    </div>
+    <div class="col-xs-8 col-sm-9 col-md-8 col-lg-9" ></div>
+  </div>
+
+  <!--Upper timer text-->
+  <div class="row timer-text-row">
+    <div class="col-xs-3 col-sm-3 col-md-6 col-lg-8" ></div>
+    <div class="col-xs-18 col-sm-18 col-md-12 col-lg-8" ><div class="upper-timer-text">{{ 'PREVIEW.TIMER_TEXT' | translate }}</div></div>
+    <div class="col-xs-3 col-sm-3 col-md-6 col-lg-8" ></div>
+  </div>
+
+  <!--Lower timer text-->
+  <div class="row lower-timer-text ">
+    <div class="col-xs-7 col-sm-9 col-md-8 col-lg-9"></div>
+    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 day-text-row"><div class="text-days">{{ 'PREVIEW.TIMER_DAYS' | translate }}</div></div>
+    <div class="col-xs-2 col-sm-2 col-md-4 col-lg-2 hour-text-row"><div class="text-hours">{{ 'PREVIEW.TIMER_HOURS' | translate }}</div></div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 min-text-row"><div class="text-minutes">{{ 'PREVIEW.TIMER_MINUTES' | translate }}</div></div>
+    <div class="col-xs-8 col-sm-8 col-md-7 col-lg-8"></div>
+  </div>
+
+  <!--Timer-->
+  <div class="row timer-row">
+    <div class="col-xs-24 col-sm-24 col-md-24 col-lg-24" >
+      <app-countdown class="timer"></app-countdown>
+    </div>
+  </div>
+
+  <!--Logos row-->
+  <div class="row logo-row">
+
+    <!--Phone (port/land) and tablets portrait orientation-->
+    <!--<div class="col-xs-3 com-sm-3 hidden-md hidden-lg"></div>
+    <div class="col-xs-3 com-sm-3 hidden-md hidden-lg">
+      <div class="row"><img class="ranok-img" src="../../assets/images/logo2.jpg"></div>
+      <div class="row"><img class="oneI" src="../../assets/images/logo3.png"></div>
+    </div>
+    <div class="col-xs-3 com-sm-3 hidden-md hidden-lg"></div>
+    <div class="col-xs-5 com-sm-5 hidden-md hidden-lg">
+      <img class="hoda-img" src="../../assets/images/logo4.png">
+    </div>
+    <div class="col-xs-3 com-sm-3 hidden-md hidden-lg"></div>
+    <div class="col-xs-3 com-sm-3 hidden-md hidden-lg">
+      <div class="row"><img class="twoI" src="../../assets/images/APR.png"></div>
+      <div class="row"><img class="threeI" src="../../assets/images/ASSA.png"></div>
+    </div>
+    <div class="col-xs-3 com-sm-3 hidden-md hidden-lg"></div>-->
+
+    <!--Tablet portrait and mobiles-->
+    <div class="col-xs-4 col-sm-4 hidden-md hidden-lg"></div>
+    <div class="col-xs-4 col-sm-4 hidden-md hidden-lg"><img class="hoda-img" src="../../assets/images/logo4.png"></div>
+    <div class="col-xs-1 col-sm-1 hidden-md hidden-lg"><img class="mir-img" src="../../assets/images/logo3.png"></div>
+    <div class="col-xs-3 col-sm-3 hidden-md hidden-lg"><img class="apr-img" src="../../assets/images/APR.png"></div>
+    <div class="col-xs-1 col-sm-1 hidden-md hidden-lg"><img class="gci-img" src="../../assets/images/vertical_logo.png"></div>
+    <div class="col-xs-3 col-sm-3 hidden-md hidden-lg"><img class="borya-img" src="../../assets/images/borya-grinya-logo.png"></div>
+    <div class="col-xs-1 col-sm-1 hidden-md hidden-lg"><img class="ranok-img" src="../../assets/images/logo2.jpg"></div>
+    <div class="col-xs-3 col-sm-3 hidden-md hidden-lg"><img class="assa-img" src="../../assets/images/ASSA.png"></div>
+    <div class="col-xs-4 col-sm-4 hidden-md hidden-lg"></div>
+
+    <!--Tablet landscape and PC-->
+    <div class="hidden-xs hidden-sm col-md-2 col-lg-5"></div>
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-2"><img class="ranok-img" src="../../assets/images/logo2.jpg"></div>
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-2"><img class="borya-img" src="../../assets/images/borya-grinya-logo.png"></div>
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-2"><img class="mir-img" src="../../assets/images/logo3.png"></div>
+    <div class="hidden-xs hidden-sm col-md-2 col-lg-2"><img class="hoda-img" src="../../assets/images/logo4.png"></div>
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-2"><img class="assa-img" src="../../assets/images/ASSA.png"></div>
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-2"><img class="gci-img" src="../../assets/images/vertical_logo.png"></div>
+    <div class="hidden-xs hidden-sm col-md-3 col-lg-2"><img class="apr-img" src="../../assets/images/APR.png"></div>
+    <div class="hidden-xs hidden-sm col-md-2 col-lg-5"></div>
+
+  </div>
+</div>

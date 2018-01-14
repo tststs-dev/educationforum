@@ -1,0 +1,62 @@
+/*.landRegBut {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 1vw;
+  width: 106%;
+  font-size: 160%;
+  margin-left: -9%;
+  margin-top: -5%;
+  font-weight: lighter;
+}*/
+
+.landRegBut {
+  width: 120%;
+  height: 3vw;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 1vw;
+  font-size: 215%;
+  margin-left: -10%;
+  margin-top: -2%;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 1024px) {
+  .landRegBut {
+    width: 98%;
+    height: 4vw;
+    padding-top: 0;
+    border-radius: 1vw;
+    font-size: 150%;
+    letter-spacing: 0.17vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+  .landRegBut {
+    width: 112%;
+    height: 8vw;
+    font-size: 220%;
+    margin-bottom: 159%;
+    padding-top: 1vw;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .landRegBut {
+    font-size: 123%;
+    width: 94%;
+    height: 7vw;
+    border-radius: 2vw;
+    margin-bottom: 189%;
+    position: relative;
+    right: 10%;
+    p {
+      position: relative;
+      bottom: 0.8vw;
+      right: 0.7vw;
+    }
+  }
+}

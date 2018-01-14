@@ -1,0 +1,158 @@
+.artifactRow {
+  background: url(../../../../assets/images/artifact/Artefakty-bg-1920.jpg) no-repeat;
+  height: 100%;
+}
+h1{
+  font-family: Philosopher,sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 470%;
+  letter-spacing: 0.1vw;
+  margin-top: 11%;
+  margin-left: 2%;
+  margin-bottom: 10%;
+}
+h2{
+  font-family: Helvetica Neue,sans-serif;
+  text-align: center;
+  font-size: 260%;
+  letter-spacing: 0.1vw;
+  margin-top: 0.2%;
+  margin-bottom: 8%;
+}
+.ImgRow, .Img-2Row{
+  img {
+    width: 107%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .artifactRow {
+    background: url(../../../../assets/images/artifact/Artefakty-bg-1024x768.jpg) no-repeat;
+    height: 100%;
+  }
+  h1 {
+    font-size: 265%;
+    letter-spacing: 0;
+    margin-top: 20%;
+    margin-left: 3%;
+    margin-bottom: 20%;
+    padding-top: 1%;
+  }
+  h2 {
+    font-size: 150%;
+    letter-spacing: 0.02vw;
+    margin-top: 0.2%;
+    margin-bottom: 6%;
+  }
+  .ImgRow, .Img-2Row {
+    img {
+      width: 115%;
+    }
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .artifactRow {
+    background: url(../../../../assets/images/artifact/Artefakty-bg-768x1024.jpg) no-repeat;
+    height: 100%;
+  }
+  h1 {
+    font-size: 270%;
+    letter-spacing: 0;
+    margin-top: 30%;
+    margin-bottom: 12%;
+    margin-left: 9%;
+  }
+  h2 {
+    font-size: 135%;
+    letter-spacing: 0;
+    margin-top: 0.2%;
+    margin-bottom: 10%;
+    margin-left: 8%;
+  }
+  .ImgRow{
+    .IMG-1{
+      width: 130%;
+    }
+    .IMG-2{
+      width: 88%;
+      margin-left: 10%;
+    }
+    .IMG-3{
+      width: 107%;
+
+    }
+  }
+  .Img-2Row{
+    .IMG-6{
+      width: 125%;
+    }
+    .IMG-4{
+      width: 81%;
+      margin-left: 12%;
+    }
+  }
+  .Img-3Row{
+   .IMG-5{
+     width: 125%;
+   }
+    .IMG-8{
+      width: 125%;
+  }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .artifactRow {
+    background: url(../../../../assets/images/artifact/Artefakty-bg-480x725.jpg) no-repeat;
+    height: 100%;
+  }
+  h1 {
+    font-size: 190%;
+    letter-spacing: 0vw;
+    margin-top: 50%;
+    margin-bottom: 20%;
+  }
+  h2 {
+    font-size: 84% !important;
+    letter-spacing: 0vw;
+    margin-top: 0%;
+    margin-bottom: 8%;
+    margin-left: 8%;
+  }
+  .ImgRow{
+    .IMG-1{
+      width: 127%;
+      margin-top: 5%;
+    }
+    .IMG-2{
+      width: 86%;
+      margin-left: 10%;
+    }
+    .IMG-3{
+      width: 107%;
+      margin-top: 5%;
+    }
+  }
+  .Img-2Row{
+    .IMG-6{
+      width: 125%;
+      margin-top: 5%;
+    }
+    .IMG-4{
+      width: 81%;
+      margin-left: 12%;
+      margin-top: 5%;
+    }
+  }
+  .Img-3Row{
+    img{margin-bottom: 5%;}
+    .IMG-5{
+      width: 125%;
+    }
+    .IMG-8{
+      width: 125%;
+    }
+  }
+}
+
+
+

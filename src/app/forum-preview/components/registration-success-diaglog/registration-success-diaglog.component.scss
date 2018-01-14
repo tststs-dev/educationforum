@@ -1,0 +1,107 @@
+$primary-color: rgb(139, 195, 62);
+
+.buttonClose3 {
+  background: url(../../../../assets/images/Close.png) no-repeat center;
+  background-size: contain;
+  color: $primary-color;
+  width: 2.5vw;
+  height: 2.5vw;
+  position: relative !important;
+  left: 46vw;
+  bottom: 2vw;
+  line-height: normal !important;
+
+  &:hover {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+}
+
+.mat-button {
+  &:hover {
+    background-color: transparent;
+  }
+  min-width: 2.4vw !important;
+}
+
+.mat-dialog-title {
+  float: left !important;
+  margin: 0 !important;
+  text-align: center !important;
+  position: relative !important;
+  font-size: 2vw !important;
+  font-family: "Helvetica_Neue_light", sans-serif;
+  font-weight: bold;
+  box-sizing: border-box !important;
+  padding-top: 3vh;
+  line-height: normal !important;
+}
+
+/*стили для шапки*/
+
+.topRow3 {
+  width: 49vw;
+  height: 11vh;
+  background-color: $primary-color;
+  color: white;
+  letter-spacing: 0.1vw;
+}
+
+h2 {
+  font-family: "Helvetica_Neue_light", sans-serif;
+  font-weight: bold;
+  font-size: 4vh;
+  line-height: normal;
+  margin: 0 !important;;
+  padding: 0 !important;
+  position: relative;
+  top: 1.5vw;
+  left: 10vw;
+  letter-spacing: 0.1vh;
+}
+
+.greyLine3 {
+  background-color: rgb(162, 162, 162);
+  height: 0.3vh;
+  width: 49vw;
+  position: relative;
+  top: 0.5vw;
+}
+
+.bottomRow {
+  background-color: rgb(241, 241, 241);
+  height: 17vh;
+  width: 49vw;
+  float: left;
+}
+
+img {
+  width: 9vw;
+  height: 9vw;
+  position: relative;
+  left: 3vw;
+}
+
+.emaill {
+  h2 {
+    font-family: "Helvetica_Neue_light", sans-serif;
+    color: rgb(104, 104, 104);
+    position: relative;
+    font-size: 3.5vh;
+    top: -6vw;
+    left: 13vw;
+    line-height: normal;
+    letter-spacing: 0;
+  }
+}
+.titlee {
+  width: 31vw;
+}
+
+.invisible {
+  display: none;
+  float: left;
+}
+.mobileP {
+  display: none;
+}

@@ -1,0 +1,610 @@
+.mat-dialog-container {
+  padding: 0 !important;
+  border-radius: 2vh !important;
+  overflow: hidden !important;
+  line-height: normal !important;
+}
+
+.mat-button {
+  &:hover {
+    background-color: transparent;
+  }
+  min-width: 2.4vw !important;
+}
+
+.mat-form-field.wrapper {
+  padding-bottom: 3vh !important;
+}
+
+.mat-form-field-infix {
+  top: 0.5vw;
+  left: 1vw !important;
+  padding: 0 !important;
+  border-top: none !important;
+  font-style: italic !important;
+  line-height: normal !important;
+  font-size: 1.5vw !important;
+}
+
+input.mat-input-element {
+  margin-top: 3vh;
+  line-height: normal !important;
+}
+
+.mat-form-field-underline {
+  top: 2.7vw;
+  bottom: 0 !important;
+}
+
+.mat-form-field-subscript-wrapper {
+  margin-top: 0 !important;
+  line-height: normal !important;
+}
+
+/* Адаптация */
+
+.regDialogWindow {
+  .mat-dialog-container {
+    width: 49vw;
+    height: 41vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .mat-dialog-actions {
+    padding: 0 !important;
+  }
+
+  .regDialogWindow {
+    .mat-dialog-container {
+      width: 62vw !important;
+      height: 80vw !important;
+    }
+  }
+
+  .buttonClose {
+    width: 4.5vw !important;
+    height: 4.5vw !important;
+    left: 11vw !important;
+    top: 1.5vw !important;
+  }
+
+  .marginField {
+    padding-left: 0 !important;
+  }
+
+
+  .images {
+    right: 0.7vw !important;
+    top: 3vw !important;
+    width: 5.6vw !important;
+  }
+
+  .topRow {
+    width: 63vw !important;
+    height: 11.4vw !important;
+  }
+
+  .greyLine {
+    top: 6.4vw !important;
+    height: 0.4vw !important;
+    width: 63vw !important;
+  }
+
+  .regis {
+    .mat-dialog-title {
+      padding-left: 20vw !important;
+      font-size: 4vw !important;
+      padding-top: 3.5vw !important;
+    }
+  }
+
+  .textRow {
+    height: 11vw !important;
+    button {
+      margin-left: 10vw !important;
+      margin-bottom: 5vh !important;
+      width: 40vw !important;
+      height: 9vw !important;
+      border-radius: 2vh !important;
+    }
+    p {
+      font-size: 4.3vw !important;
+      margin-bottom: 1.5vw;
+      margin-left: -1vw !important;
+    }
+  }
+  form {
+    width: 62vw !important;
+    height: 69vw !important;
+
+    h2 {
+      font-size: 3vw !important;
+      padding-top: 3vh !important;
+      display: none !important;
+    }
+    .mobileH {
+      display: initial !important;
+      font-size: 3vw !important;
+      position: relative;
+      top: 3vw !important;
+    }
+  }
+  .mat-form-field {
+    width: 52vw !important;
+    height: 8vw !important;
+    left: 2.5vw !important;
+
+    input {
+      width: 51.8vw !important;
+      height: 5vw !important;
+      bottom: 0.8vw !important;
+    }
+  }
+
+  .errorMessage {
+    font-size: 2.6vw !important;
+    top: 0 !important;
+  }
+  .errorMessageBig {
+    font-size: 2.6vw !important;
+  }
+
+  h3 {
+    font-size: 2.4vw !important;
+    left: 3vw !important;
+    top: 2vw !important;
+  }
+
+  .mat-form-field-infix {
+    font-size: 3vw !important;
+    bottom: -0.5vw !important;
+  }
+
+  .form-control {
+    font-size: 4vw !important;
+  }
+
+  .mat-form-field-underline {
+    top: 5vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .buttonClose {
+    left: 9vw !important;
+  }
+
+  .textRow {
+    p {
+      margin-left: -2vw !important;
+    }
+  }
+  .mat-dialog-actions {
+    padding: 0 !important;
+  }
+  .submitBtn {
+    padding-top: 1vw !important;
+  }
+
+  h3 {
+    top: 2vw !important;
+  }
+  .errorMessageBig {
+    font-size: 2.6vw !important;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 601px) {
+  .mat-form-field-underline {
+    top: 5vw !important;
+  }
+  .regDialogWindow {
+    .mat-dialog-container {
+      width: 79vw !important;
+    }
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .regDialogWindow {
+    .mat-dialog-container {
+      width: 80vw !important;
+      height: 85vw !important;
+    }
+  }
+
+  .form-control {
+    font-size: 4vw !important;
+  }
+
+  form {
+    width: 80vw !important;
+    height: 78vw !important;
+    h2 {
+      display: none !important;
+    }
+  }
+  .topRow {
+    width: 80vw !important;
+    height: 12vw !important;
+  }
+  .regis {
+    .mat-dialog-title {
+      padding-left: 31vw !important;
+      font-size: 4vw !important;
+      padding-top: 4vw !important;
+    }
+  }
+  .buttonClose {
+    left: 22.3vw !important;
+    top: 1.5vw !important;
+    width: 4vw !important;
+    height: 4vw !important;;
+  }
+  .greyLine {
+    height: 0.4vw !important;
+    width: 80vw !important;
+    top: 7.5vw !important;
+  }
+
+  .mobileH {
+    display: none !important;
+  }
+  .tabletH {
+    display: initial !important;
+    font-size: 3.4vw !important;
+    position: relative;
+    top: 3vw;
+  }
+
+  .submitBtn {
+    margin: 0 auto !important;
+    width: 26vw !important;
+    height:6vw !important;
+    position: relative;
+    top: 4vw !important;
+  }
+  .textRow {
+    .p4 {
+      position: relative !important;
+      right: 1vw !important;
+      bottom: 0.5vw !important;
+      font-size: 3vw !important;
+    }
+  }
+  h3 {
+    font-size: 2vw !important;
+    position: relative !important;
+    left: 6vw !important;
+    top: 1vw !important;
+  }
+
+  .mat-form-field {
+    width: 46vw !important;
+    height:8.6vw !important;
+    left: 5vw !important;
+
+    input {
+      width: 45.8vw !important;
+      height: 5.4vw !important;
+    }
+  }
+
+  .mat-form-field-infix {
+    height: 5vw !important;
+    font-size:  3vw !important;
+  }
+  .mat-form-field-underline {
+    top: 5.4vw !important;
+  }
+
+  .images {
+    width: 6vw !important;
+    top: 2vw !important;
+    right: 11vw !important;
+  }
+
+  .errorMessage {
+    font-size: 2.5vw !important;
+    top: 0.4vw !important;
+  }
+
+  .errorMessageBig {
+    font-size: 2.2vw !important;
+  }
+
+  .textRow {
+    button {
+      border-radius: 1vw !important;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+  .regDialogWindow {
+    .mat-dialog-container {
+      width: 60vw !important;
+      height: 48vw !important;
+    }
+  }
+  .mat-form-field {
+    width: 38vw !important;
+    height: 7vw !important;
+    left: 0 !important;
+    right: 5vw !important;
+
+    input {
+      width: 37.8vw !important;
+      height: 4.2vw !important;
+    }
+  }
+  .mat-form-field-infix {
+    font-size: 2.5vw !important;
+  }
+  .mat-form-field-underline {
+    top: 4.4vw !important;
+  }
+  form {
+    width: 60vw !important;
+    height: 43vw !important;
+  }
+  .form-control {
+    font-size: 3vw !important;
+  }
+  .textRow {
+    .p4 {
+      font-size: 2.3vw !important;
+      bottom: 0.2vw !important;
+    }
+    .submitBtn {
+      width: 21vw !important;
+      height: 4.8vw !important;
+      top: -2.5vw !important;
+    }
+  }
+  .tabletH {
+    top: 0.5vw;
+    font-size: 2.2vw !important;
+  }
+  .regis {
+    .mat-dialog-title {
+      padding-left: 22vw !important;
+      font-size: 3vw !important;
+      padding-top: 1vw !important;
+    }
+  }
+  .topRow {
+    width: 60vw !important;
+    height: 6vw !important;
+  }
+  .regDialogWindow {
+    .mat-dialog-container {
+      body {
+        position: fixed;
+      }
+    }
+  }
+  .greyLine {
+    width: 60vw !important;
+    top: 2.5vw !important;
+  }
+
+  .buttonClose {
+    left: 17.5vw !important;
+    top: 0.5vw !important;
+    width: 3vw !important;
+    height: 3vw !important;
+  }
+
+  .images {
+    width: 5vw !important;
+    top: 1.5vw !important;
+    right: 5vw !important;
+  }
+  h3 {
+    font-size: 1.5vw !important;
+    position: relative !important;
+    left: 3vw !important;
+  }
+  .errorMessage {
+    font-size: 2vw !important;
+    top: -0.4vw !important;
+  }
+  .errorMessageBig {
+    top: -0.5vw !important;
+  }
+}
+
+@media screen and (min-width: 666px) and (max-width: 667px) and (orientation: landscape) {
+  .buttonClose {
+    left: 15.5vw !important;
+  }
+  .submitBtn {
+    top: -3vw !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+  .regDialogWindow {
+    .mat-dialog-container {
+      width: 63vw !important;
+      height: 75vh !important;
+    }
+  }
+
+  .buttonClose {
+    width: 2.5vw !important;
+    height: 2.5vw !important;
+    left: 18.5vw !important;
+    top: 1.5vh !important;
+  }
+
+  .marginField {
+    padding-left: 0 !important;
+  }
+
+  .images {
+    right: 12vh !important;
+    top: 2vh !important;
+    width: 4vw !important;
+  }
+
+  .topRow {
+    width: 64vw !important;
+    height: 10vh !important;
+  }
+
+  .greyLine {
+    top: 4.8vw !important;
+    width: 64vw !important;
+  }
+
+  .regis {
+    .mat-dialog-title {
+      padding-left: 25vw !important;
+      font-size: 3vw !important;
+      padding-top: 3vh !important;
+    }
+  }
+
+  .textRow {
+    button {
+      margin-left: 12.5vw !important;
+      margin-bottom: 5vh !important;
+      width: 18vw !important;
+      height: 6vh !important;
+      border-radius: 1vh !important;
+    }
+    p {
+      font-size: 2vw !important;
+      margin-left: -0.6vh !important;
+    }
+  }
+  form {
+    width: 64vw !important;
+    height: 64vh !important;
+    padding-left: 10vw !important;
+
+    h2 {
+      font-size: 2.3vw !important;
+      padding-top: 2.5vh !important;
+      padding-right: 10vw !important;
+      display: none !important;
+    }
+    .tabletH {
+      display: initial !important;
+      position: relative;
+      top: 3vh;
+      right: 5.5vw;
+    }
+  }
+  .mat-form-field {
+    width: 37vw !important;
+    height: 8.2vh !important;
+
+    input {
+      width: 37.2vw !important;
+      height: 4.1vw !important;
+      font-size: 4vh !important;
+    }
+  }
+
+  .errorMessage {
+    font-size: 1.5vw !important;
+    top: 0 !important;
+  }
+
+  h3 {
+    font-size: 1.7vw !important;
+    left: 2.8vw !important;
+  }
+
+  .mat-form-field-infix {
+    font-size: 2vw !important;
+  }
+
+  .form-control {
+    font-size: 4vw !important;
+  }
+
+  .spaceDiv1 {
+    height: 13vh !important;
+  }
+
+  .spaceDiv2 {
+    height: 5vh !important;
+  }
+
+  .mat-form-field-infix {
+    height: 4vw !important;
+  }
+  .mat-form-field-underline {
+    top: 4vw !important;
+  }
+
+  .errorMessageBig {
+    font-size: 2.5vw !important;
+  }
+
+  .textRow {
+    button {
+      border-radius: 1vw !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1024px) and (orientation: landscape) {
+  .greyLine {
+    top: 4vw !important;
+  }
+
+
+  @media screen and (min-width: 959px) and (max-width: 960px) and (orientation: landscape) {
+    .greyLine {
+      top: 2.7vw !important;
+    }
+    .regis {
+      .mat-dialog-title {
+        padding-top: 2vh !important;
+      }
+    }
+    .mat-form-field {
+      height: 9.2vh !important;
+    }
+    .textRow {
+      button {
+        margin-top: -2vh !important;
+        margin-bottom: 0 !important;
+      }
+    }
+    form {
+      height: 65vh !important;
+    }
+    .mat-form-field-underline {
+      top: 3.6vw !important;
+    }
+    .errorMessage {
+      font-size: 1.3vw !important;
+      top: -0.4vw !important;
+    }
+    .errorMessage {
+      top: -0.3vw !important;
+      font-size: 1.3vw !important;
+    }
+    .mat-form-field {
+      input {
+        height: 3.7vw !important;
+      }
+    }
+  }
+
+  @media all and (max-width: 1281px) and (min-width: 1280px) {
+    .mat-form-field-underline {
+      top: 2.77vw !important;
+    }
+  }
+}

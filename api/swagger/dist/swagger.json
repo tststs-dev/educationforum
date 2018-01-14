@@ -1,0 +1,215 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Education forum 2018 API",
+    "version" : "1.0.0",
+    "title" : "FORUM 2018 API",
+    "contact" : {
+      "email" : "vvovvrulit@gmail.com"
+    }
+  },
+  "host" : "virtserver.swaggerhub.com",
+  "basePath" : "/Forum/Forum/1.0.0",
+  "tags" : [ {
+    "name" : "/api/session",
+    "description" : "Create user, login, etc"
+  } ],
+  "schemes" : [ "https", "http" ],
+  "paths" : {
+    "/register" : {
+      "post" : {
+        "tags" : [ "/api/session" ],
+        "summary" : "create new forum user",
+        "description" : "create new forum user",
+        "operationId" : "registerUser",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "User object",
+          "description" : "user data to create new",
+          "required" : false,
+          "schema" : {
+            "type" : "object",
+            "example" : {
+              "email" : "youremail@gmail.com",
+              "password" : "123123asd",
+              "confirmPassword" : "123123asd"
+            }
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "user created"
+          },
+          "400" : {
+            "description" : "validation error"
+          }
+        }
+      }
+    },
+    "/free-email" : {
+      "post" : {
+        "tags" : [ "/api/session" ],
+        "summary" : "check if email is free",
+        "description" : "check if email is free",
+        "operationId" : "checkEmail",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "Email",
+          "description" : "Email to check",
+          "required" : false,
+          "schema" : {
+            "type" : "object",
+            "example" : {
+              "email" : "youremail@gmail.com"
+            }
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "email is free"
+          },
+          "400" : {
+            "description" : "validation error"
+          },
+          "409" : {
+            "description" : "db already exists this email"
+          }
+        }
+      }
+    },
+    "/login" : {
+      "post" : {
+        "tags" : [ "/api/session" ],
+        "summary" : "Login into our service",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : true,
+          "schema" : {
+            "type" : "object",
+            "example" : {
+              "email" : "myemail@gmail.com",
+              "password" : "123123asdasd"
+            }
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "All is ok"
+          },
+          "400" : {
+            "description" : "Validation error"
+          },
+          "403" : {
+            "description" : "Email address not confirmed"
+          },
+          "422" : {
+            "description" : "Incorrect email or password"
+          }
+        }
+      }
+    },
+    "/confirm-email/:id" : {
+      "get" : {
+        "tags" : [ "/api/session" ],
+        "summary" : "Confirm your email",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "All is ok"
+          },
+          "404" : {
+            "description" : "No user with current email"
+          }
+        }
+      }
+    },
+    "/logout" : {
+      "patch" : {
+        "tags" : [ "/api/session" ],
+        "summary" : "Logout from our service",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "Authorization",
+          "in" : "header",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "All is ok"
+          }
+        }
+      }
+    },
+    "/refresh-tokens" : {
+      "patch" : {
+        "tags" : [ "/api/session" ],
+        "summary" : "Refresh access and refresh tokens",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "Authorization",
+          "in" : "header",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "All is ok"
+          },
+          "401" : {
+            "description" : "Token is expired"
+          },
+          "409" : {
+            "description" : "Bad token"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "User" : {
+      "type" : "object",
+      "required" : [ "_id", "confirmed", "passwordHash" ],
+      "properties" : {
+        "_id" : {
+          "type" : "string",
+          "example" : "59f22a042b105524ec05aa35"
+        },
+        "passwordHash" : {
+          "type" : "string",
+          "example" : "57dd82c672272e733e4fe7"
+        },
+        "confirmed" : {
+          "type" : "boolean",
+          "example" : false
+        }
+      }
+    },
+    "Session" : {
+      "required" : [ "_id", "refreshTokenHash", "userId" ],
+      "properties" : {
+        "_id" : {
+          "type" : "string",
+          "example" : "59f22a042b105524ec05aa35"
+        },
+        "userId" : {
+          "type" : "string",
+          "example" : "59f22a042b105524ec05aa35"
+        },
+        "refreshTokenHash" : {
+          "type" : "string",
+          "example" : "408-867-5309"
+        }
+      }
+    }
+  }
+}

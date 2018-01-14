@@ -1,0 +1,61 @@
+.registration-button {
+  font-family: "Helvetica_Neue_light", sans-serif;
+  border-radius: 5%;
+  font-size: 1.3vw;
+  width: 70%;
+  height: 3vw;
+  line-height: 1vw;
+}
+
+.registration-button:hover{
+  background-color: #8bc33e;
+  color: white;
+}
+
+.registration-button:active{
+  background-color: #79aa36;
+  color: white;
+}
+
+//media for mobile
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .registration-button {
+    border-radius: 2vw;
+    font-size: 3.6vw;
+    width: 24vw;
+    padding-left: 3.5vw;
+    height: 7.2vw;
+    margin-bottom: 5.5vw;
+    z-index: 2;
+  }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+  .registration-button {
+    font-size: 4.1vw;
+    width: 175%;
+    height: 8vw;
+    border-radius: 1vw;
+    margin-left: -38%;
+    padding-bottom: 6%;
+  }
+
+}
+
+//media for tab in landscape
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .registration-button {
+    font-size: 2.3vw;
+    width: 69%;
+    height: 100%;
+    border-radius: 0.8vw;
+  }
+}
+
+
+
+
+
+
